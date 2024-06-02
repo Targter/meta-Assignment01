@@ -1,45 +1,40 @@
-
-
-// Create a variable that can hold a number of NFT's. What type of variable might this be?
-
+// Step 1: Create a variable that can hold a number of NFTs
 let NFTContainer = [];
 
-/*
-2. Create an object inside your mintNFT function that will hold the metadata for your NFTs. 
-   The metadata values will be passed to the function as parameters. When the NFT is ready, 
-   you will store it in the variable you created in step 1
-*/
-
-function mintNFT (name ,symbol ,amount,day) {
-    let nftdata = {
+// Step 2: Create a mintNFT function to store NFT metadata
+function mintNFT(name, symbol, amount, day) {
+    let nftData = {
         name: name,
-        symbol:symbol,
+        symbol: symbol,
         amount: amount,
         day: day
-    }
-    NFTContainer.push(nftdata);
-
+    };
+    NFTContainer.push(nftData);
 }
 
+// Mint some NFTs
+mintNFT("btcbitcoin", "BTC", 5686872, "TUES");
+mintNFT("ETHEthereum", "ETH", 316572, "MON");
+mintNFT("BNBBNB", "BNB", 50084, "WED");
 
-mintNFT("btcbitcoin", "BTC",5686872,"TUES");
-mintNFT("ETHEthereum", "ETH",316572,"MON");
-mintNFT("BNBBNB", "BNB",50084,"WED");
-
-// 3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
-function listNFTs () {
+// Step 3: Function to list all NFTs
+function listNFTs() {
     for (let i = 0; i < NFTContainer.length; i++) {
-        console.log("NFTDETAILS");
+        console.log("NFT DETAILS");
         console.log("Name: " + NFTContainer[i].name);
-        console.log("SYMBOL: " + NFTContainer[i].symbol);
-        console.log("AMOUNT: " + NFTContainer[i].amount);
-        console.log("DAY: " + NFTContainer[i].day);
+        console.log("Symbol: " + NFTContainer[i].symbol);
+        console.log("Amount: " + NFTContainer[i].amount);
+        console.log("Day: " + NFTContainer[i].day);
     }
 }
 
+// List all NFTs
 listNFTs();
-// 4. For good measure, getTotalSupply() should return the number of NFT's you have created
+
+// Step 4: Function to get the total supply of NFTs
 function getTotalSupply() {
-    console.log("Total nfts " + NFTContainer.length);
+    console.log("Total NFTs: " + NFTContainer.length);
 }
+
+// Get the total supply of NFTs
 getTotalSupply();
