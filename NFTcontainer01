@@ -29,15 +29,11 @@ mintNFT("BNBBNB", "BNB",50084,"WED");
 // 3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
 function listNFTs () {
     for (let i = 0; i < NFTContainer.length; i++) {
-        console.log("\n\n_____________________ POKEMON CARD  _________________________\n\n" );
+        console.log("NFTDETAILS");
         console.log("Name: " + NFTContainer[i].name);
-        console.log("Type: " + NFTContainer[i].type);
-        console.log("Rarity: " + NFTContainer[i].rarity);
-        console.log("Attack: " + NFTContainer[i].attack);
-        console.log("Defense: " + NFTContainer[i].defense);
-        console.log("Speed: " + NFTContainer[i].speed);
-        console.log("Level: " + NFTContainer[i].level);
-        console.log("\n\n_____________________* * * * *_________________________\n" );
+        console.log("SYMBOL: " + NFTContainer[i].symbol);
+        console.log("AMOUNT: " + NFTContainer[i].amount);
+        console.log("DAY: " + NFTContainer[i].day);
     }
 }
 
