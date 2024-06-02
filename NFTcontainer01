@@ -11,13 +11,13 @@ let NFTContainer = [];
 */
 
 function mintNFT (name ,symbol ,amount,day) {
-    let NFT = {
+    let nftdata = {
         name: name,
         symbol:symbol,
         amount: amount,
         day: day
     }
-    NFTContainer.push(NFT);
+    NFTContainer.push(nftdata);
 
 }
 
@@ -40,6 +40,6 @@ function listNFTs () {
 listNFTs();
 // 4. For good measure, getTotalSupply() should return the number of NFT's you have created
 function getTotalSupply() {
-    console.log("Total NFTs  Minted do Far " + NFTContainer.length);
+    console.log("Total nfts " + NFTContainer.length);
 }
 getTotalSupply();
