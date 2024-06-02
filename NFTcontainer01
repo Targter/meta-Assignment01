@@ -23,6 +23,8 @@ function mintNFT (name ,symbol ,amount,day) {
 
 
 mintNFT("btcbitcoin", "BTC",5686872,"TUES");
+mintNFT("ETHEthereum", "ETH",316572,"MON");
+mintNFT("BNBBNB", "BNB",50084,"WED");
 
 // 3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
 function listNFTs () {
