@@ -31,46 +31,32 @@ The application provides a basic structure to manage NFT metadata, including det
 3. The program will automatically execute the minting of NFTs, listing all NFTs, and displaying the total supply of NFTs.
 
    Example output:
-
+   
    ```plaintext
-   NFT Minted: iPhone 13
-   NFT Minted: Galaxy S21
-   NFT Minted: MacBook Pro
-   NFT Minted: Surface Pro 7
+   NFT Minted:btcbitcoin
+   NFT Minted: ETHEthereum
+   NFT Minted: BNBBNB
 
    NFT #1
-   Name: iPhone 13
-   Category: Smartphone
-   Brand: Apple
-   Specs: 128GB, A15 Bionic
-   Price: $799
-   Release Year: 2021
+   Name: btcbitcoin
+   symbol: BTC
+   amount: 5686872
+   day: TUES
 
    NFT #2
-   Name: Galaxy S21
-   Category: Smartphone
-   Brand: Samsung
-   Specs: 128GB, Exynos 2100
-   Price: $699
-   Release Year: 2021
+      Name: ETHEthereum
+   symbol: ETH
+   amount: 31657
+   day: MON
 
    NFT #3
-   Name: MacBook Pro
-   Category: Laptop
-   Brand: Apple
-   Specs: M1 Chip, 16GB RAM
-   Price: $1299
-   Release Year: 2020
+      Name: BNBBNB
+   symbol: BNB
+   amount: 50084
+   day: WED
 
-   NFT #4
-   Name: Surface Pro 7
-   Category: Tablet
-   Brand: Microsoft
-   Specs: Intel i5, 8GB RAM
-   Price: $749
-   Release Year: 2019
 
-   Total NFTs Minted: 4
+   Total NFTs Minted: 3
    ```
 
 ## Help
